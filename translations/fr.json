@@ -1,0 +1,6 @@
+{
+  "RaspotifyNoInstalled": "Raspotify n'est pas installé!",
+  "RaspotifyError": "Raspotify: {VALUES}",
+  "TBRestart": "Redémarre le serveur Raspotify",
+  "TBRestarted": "Serveur redémarré, nouveaux identifiants chargés!"
+}

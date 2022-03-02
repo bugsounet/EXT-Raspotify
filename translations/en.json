@@ -1,0 +1,6 @@
+{
+  "RaspotifyNoInstalled": "Raspotify is not installed !",
+  "RaspotifyError": "Raspotify: {VALUES}",
+  "TBRestart": "Restart Raspotify server",
+  "TBRestarted": "Server restarted, new credentials loaded"
+}
