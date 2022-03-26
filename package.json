@@ -1,13 +1,14 @@
 {
   "name": "EXT-Raspotify",
   "version": "1.0.0",
-  "rev": "220302",
+  "rev": "220326",
   "description": "Raspotify plugins for EXT-Spotify.",
   "main": "EXT-Raspotify.js",
   "scripts": {
     "preinstall": "installer/preinstall.sh",
     "postinstall": "installer/postinstall.sh",
-    "update": "installer/update.sh"
+    "update": "installer/update.sh",
+    "setup": "sudo node installer/RaspotifyConfig"
   },
   "keywords": [
     "magic mirror",
@@ -25,6 +26,6 @@
   },
   "homepage": "https://wiki.bugsounet.fr/en/EXT-Raspotify",
   "dependencies": {
-    "@bugsounet/systemd": "^1.0.0"
+    "@bugsounet/systemd": "^1.0.1"
   }
 }

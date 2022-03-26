@@ -62,6 +62,13 @@ else
     Installer_success "OS Detected: $OSTYPE ($os_name $os_version $arch)"
   fi
 fi
+echo
+
+# check dependencies
+dependencies=(raspotify)
+Installer_info "Checking all dependencies..."
+Installer_update_dependencies
+Installer_success "All Dependencies needed are installed !"
 
 echo
 Installer_info "Installing all npm libraries..."

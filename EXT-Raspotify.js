@@ -1,13 +1,21 @@
 /**
  ** Module : EXT-Raspotify
  ** @bugsounet
- ** ©02-2022
+ ** ©03-2022
  ** support: http://forum.bugsounet.fr
  **/
 
 Module.register("EXT-Raspotify", {
   defaults: {
-    debug: false
+    debug: false,
+    email: null,
+    password: null,
+    deviceName: "MagicMirror",
+    deviceCard: "hw:CARD=Headphones,DEV=0" // for Headphones
+    //deviceCard: "hw:CARD=b1,DEV=0" // for HDMI
+    //deviceCard: "hw:CARD=PCH,DEV=0", // for me and linux ?
+    minVolume: 50,
+    maxVolume: 100
   },
 
   getDom: function() {
