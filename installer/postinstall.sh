@@ -26,6 +26,8 @@ cd ..
 # module name
 Installer_module="$(grep -Eo '\"name\"[^,]*' ./package.json | grep -Eo '[^:]*$' | awk  -F'\"' '{print $2}')"
 
+Installer_error "Don't Forget to create your Raspotify config and run this command: 'npm run setup'"
+echo
 
 # the end...
 Installer_warning "Support is now moved in a dedicated Server: https://forum.bugsounet.fr"

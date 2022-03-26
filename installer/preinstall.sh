@@ -64,10 +64,20 @@ else
 fi
 echo
 
-# check dependencies
-dependencies=(raspotify)
-Installer_info "Checking all dependencies..."
-Installer_update_dependencies
+Installer_info "Installing Raspotify..."
+Installer_warning "Open the fridge and take a beer..."
+Installer_warning "And keep cool..."
+Install_error=0
+
+curl -sL https://dtcooper.github.io/raspotify/install.sh | sh || Install_error=1
+
+if  [ "$Install_error" == 1 ]; then
+  echo
+  Installer_error "Error detected !"
+  exit 255
+fi
+
+echo
 Installer_success "All Dependencies needed are installed !"
 
 echo
