@@ -31,12 +31,12 @@ function checkConfig() {
     return process.exit(1)
   }
 
-  if (!RaspotifyModule.config.deviceName) console.log("Warning: deviceName not found! using default name:", RaspotifyDeviceName)
+  if (!RaspotifyModule.config.deviceName) console.log("Warning: deviceName not found! using default name:", RaspotifyDeviceName, "\n")
   else  RaspotifyDeviceName= RaspotifyModule.config.deviceName
 
   if (!RaspotifyModule.config.deviceCard) {
     console.log("Warning: deviceCard not found! using default name:", RaspotifyDeviceCard)
-    console.log("You can determinate it with `./librespot --device` command")
+    console.log("You can determinate it with `librespot --device ?` command\n")
   }
   else  RaspotifyDeviceCard= RaspotifyModule.config.deviceCard
 
@@ -50,7 +50,7 @@ function checkConfig() {
     return process.exit(1)
   }
 
-  if (!RaspotifyModule.config.maxVolume) console.log("Warning: maxVolume field is not defined in your config. Using default value:", RaspotifyInitialVolume)
+  if (!RaspotifyModule.config.maxVolume) console.log("Warning: maxVolume field is not defined in your config. Using default value:", RaspotifyInitialVolume, "\n")
   else RaspotifyInitialVolume = RaspotifyModule.config.maxVolume
 
   console.log("Info: deviceName found:", RaspotifyDeviceName)
@@ -186,7 +186,7 @@ LIBRESPOT_VOLUME_RANGE="50.0"
 # HTTP proxy to use when connecting.
 #LIBRESPOT_PROXY=""
 `
-  console.log("\n")
+  console.log("Writing your Raspotify configuration...\n")
   // push new config
   fs.writeFile("/etc/raspotify/conf", RaspotifyConfig, async (err, data) => {
     if (err) {
