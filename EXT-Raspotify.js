@@ -12,7 +12,7 @@ Module.register("EXT-Raspotify", {
     password: null,
     deviceName: "MagicMirror",
     deviceCard: "hw:CARD=Headphones,DEV=0", // for Headphones
-    //deviceCard: "hw:CARD=b1,DEV=0" // for HDMI
+    //deviceCard: "hw:CARD=b1,DEV=0", // for HDMI
     //deviceCard: "hw:CARD=PCH,DEV=0", // for me and linux ?
     minVolume: 50,
     maxVolume: 100
