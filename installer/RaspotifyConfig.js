@@ -35,7 +35,7 @@ function checkConfig() {
   else  RaspotifyDeviceName= RaspotifyModule.config.deviceName
 
   if (!RaspotifyModule.config.deviceCard) {
-    console.log("Warning: deviceCard not found! using default name:", RaspotifyDeviceCard)
+    console.log("Warning: deviceCard not found! using default name:", RaspotifyDeviceCard, "(Headphones setting)")
     console.log("You can determinate it with `librespot --device ?` command\n")
   }
   else  RaspotifyDeviceCard= RaspotifyModule.config.deviceCard
