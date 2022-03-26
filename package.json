@@ -8,7 +8,8 @@
     "preinstall": "installer/preinstall.sh",
     "postinstall": "installer/postinstall.sh",
     "update": "installer/update.sh",
-    "setup": "sudo node installer/RaspotifyConfig"
+    "setup": "sudo node installer/RaspotifyConfig",
+    "remove" : "sudo apt-get remove raspotify"
   },
   "keywords": [
     "magic mirror",
