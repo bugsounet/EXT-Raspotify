@@ -1,7 +1,7 @@
 {
   "name": "EXT-Raspotify",
-  "version": "1.0.0",
-  "rev": "220326",
+  "version": "1.0.1",
+  "rev": "220724",
   "description": "Raspotify plugins for EXT-Spotify.",
   "main": "EXT-Raspotify.js",
   "scripts": {

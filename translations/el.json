@@ -1,0 +1,6 @@
+{
+  "RaspotifyNoInstalled": "Το Raspotify δεν είναι εγκατεστημένο !",
+  "RaspotifyError": "Raspotify: {VALUES}",
+  "TBRestart": "Restart Raspotify server",
+  "TBRestarted": "Server restarted, new credentials loaded"
+}
